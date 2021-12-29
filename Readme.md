@@ -18,6 +18,3 @@ Mads Kjeldgaard maintains an extensive list of resources at [Awesome SuperCollid
 The code here uses sc3-plugins. If I use other extensions in a piece I'll raise an alert in the piece's Readme.md.  
 
 In the *sketches* folder I experiment, and anything goes there. Some of it might be broken or stupid. 
-
-## License
-Creative Commons BY-NC-SA. 
