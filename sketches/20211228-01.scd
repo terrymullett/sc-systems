@@ -1,6 +1,6 @@
 (
 {
-    var wt, wtFiles = ["AKWF_0001/AKWF_0001", "AKWF_0001/AKWF_0003", "AKWF_0001/AKWF_0006"];
+    var wt, wtFiles = ["AKWF_0001", "AKWF_0003", "AKWF_0006"];
     var firstWt, lastWt;
 
     "../setup/Setup.scd".loadRelative;
