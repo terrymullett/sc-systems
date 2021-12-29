@@ -19,3 +19,5 @@ If you're not a SuperCollider nerd, the rest of this paragraph will sound like n
 
 In the *sketches* folder I experiment, and anything goes there. Some of it might be broken or stupid. Some of it might not run on your computer. Some of it might not on mine anymore.
 
+## License
+Creative Commons BY-NC-SA. If you find something useful here, by all means use it, but give some credit. If you make money from it (like, amazing things do happen) then we're in your corner, but my shade will haunt you if you don't check in, and if it's more than 50 dollars then you need to buy my granddaugher a present. She gets to choose.
