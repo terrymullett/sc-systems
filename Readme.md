@@ -15,9 +15,9 @@ Mads Kjeldgaard maintains an extensive list of resources at [Awesome SuperCollid
 
 ## Dependencies and Caveats
 
-If you're not a SuperCollider nerd, the rest of this paragraph will sound like nonsense. Maybe it is anyway. Anyway, the code here uses sc3-plugins. In general I don't have an issue with extensions and have had no trouble with the ones I'm using here. If I use a Quark in a piece I'll raise an alert in the piece's Readme.md. This is my general alert that I freely use sc3-plugins. 
+The code here uses sc3-plugins. If I use other extensions in a piece I'll raise an alert in the piece's Readme.md.  
 
-In the *sketches* folder I experiment, and anything goes there. Some of it might be broken or stupid. Some of it might not run on your computer. Some of it might not on mine anymore.
+In the *sketches* folder I experiment, and anything goes there. Some of it might be broken or stupid. 
 
 ## License
-Creative Commons BY-NC-SA. If you find something useful here, by all means use it, but give some credit. If you make money from it (like, amazing things do happen) then we're in your corner, but my shade will haunt you if you don't check in, and if it's more than 50 dollars then you need to buy my granddaugher a present. She gets to choose.
+Creative Commons BY-NC-SA. 
