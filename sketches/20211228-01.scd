@@ -1,9 +1,9 @@
 (
+"../setup/Setup.scd".loadRelative;
 {
     var wt, wtFiles = ["AKWF_0001", "AKWF_0003", "AKWF_0006"];
     var firstWt, lastWt;
 
-    "../setup/Setup.scd".loadRelative;
     topEnvironment.use { {~envReady.isNil}.while{0.1.wait} };
     p.makeTempoClock(2).quant_(4).fadeTime_(2);
 

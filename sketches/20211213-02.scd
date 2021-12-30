@@ -1,8 +1,8 @@
 (
+"../setup/Setup.scd".loadRelative;
 {
     var numVoices = 8;
 
-    "../setup/Setup.scd".loadRelative;
     topEnvironment.use { {~envReady.isNil}.while {0.1.wait}};
     p.clear;
     p.fadeTime_(2);
