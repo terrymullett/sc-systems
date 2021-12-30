@@ -1,16 +1,14 @@
-/*
-"Oh, to" v3 Dec 2021
-*/
 "../setup/Setup.scd".loadRelative;
 
 (
 e.wt = Buffer.allocConsecutive(3, s, 8192);
-["AKWF_0001", "AKWF_0006", "AKWF_0115"].do {
+["AKWF_0001", "AKWF_0003", "AKWF_0115"].do {
     |which, i|
     e.wt[i].read(thisProcess.nowExecutingPath.dirname +/+ "../wt/" +/+ which ++ ".wav.wtable");
 };
 )
 
+(
 ~lfo0 = { LFBrownNoise2.kr(1!2).range(e.wt[0].bufnum, e.wt[2].bufnum) };
 ~lfo1 = { SinOsc.kr(0.1).range(600, 800) };
 ~lfo2 = { SinOsc.kr(0.3).range(0.5, 1.5) };
@@ -18,6 +16,7 @@ e.wt = Buffer.allocConsecutive(3, s, 8192);
 
 ~a.play;
 ~a.vol_(1);
+)
 
 (
 ~a[0] = \mix -> { VOsc.ar(bufpos: ~lfo0, freq: \freq.kr(32.midicps + [-12.5, 12.5])).tanh };
@@ -60,6 +59,7 @@ e.wt = Buffer.allocConsecutive(3, s, 8192);
     )
 };
 ~a.set(\wet200, 0.55);
-)
 
 ~a.gui
+)
+
