@@ -1,10 +1,10 @@
 (
+"../../setup/Setup.scd".loadRelative;
 {
     var root = 58;
     var maxVoices = 5;
     var w, b, player, playing = false;
 
-    "../../setup/Setup.scd".loadRelative;
     topEnvironment.use{ { ~envReady.isNil }.while{ 0.1.wait } };
 
     p.makeTempoClock(1).quant_(0);

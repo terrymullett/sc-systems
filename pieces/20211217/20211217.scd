@@ -1,4 +1,5 @@
 (
+"../../setup/Setup.scd".loadRelative;
 {
     var scale = Scale.major, root = 1;
     var voices = [
@@ -13,7 +14,6 @@
 
     var w, b, play, stop;
 
-    "../../setup/Setup.scd".loadRelative;
     topEnvironment.use { {~envReady.isNil}.while {0.1.wait}};
 
     p.clear;

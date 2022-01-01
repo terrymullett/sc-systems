@@ -1,4 +1,5 @@
 (
+"../../setup/Setup.scd".loadRelative;
 {
     var numVoices = 12;
     var notesSelection = [0, 1, 5, 6];
@@ -8,7 +9,6 @@
 
     var w, b, player, playing = false;
 
-    "../../setup/Setup.scd".loadRelative;
     topEnvironment.use{ { ~envReady.isNil }.while{ 0.1.wait } };
 
     p.clear;

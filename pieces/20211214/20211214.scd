@@ -1,9 +1,9 @@
 (
-var stability = 0, path = thisProcess.nowExecutingPath.dirname, tempo, nextFigure, thisFigure, w, tDisp1, tDisp2,
-bStor, bTrig, sRand, buttons, bSave, bLoad, bClear, bPlay, bRec, player, playing, newFigure, tempoFunc, pattern;
+"../../setup/Setup.scd".loadRelative;
 
 {
-    "../../setup/Setup.scd".loadRelative;
+    var stability = 0, path = thisProcess.nowExecutingPath.dirname, tempo, nextFigure, thisFigure, w, tDisp1, tDisp2,
+    bStor, bTrig, sRand, buttons, bSave, bLoad, bClear, bPlay, bRec, player, playing, newFigure, tempoFunc, pattern;
     topEnvironment.use { {~envReady.isNil}.while {0.1.wait}};
 
     /*
