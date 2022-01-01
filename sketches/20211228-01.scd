@@ -4,7 +4,8 @@
     var wt, wtFiles = ["AKWF_0001", "AKWF_0003", "AKWF_0006"];
     var firstWt, lastWt;
 
-    topEnvironment.use { {~envReady.isNil}.while{0.1.wait} };
+    0.1.wait;
+    topEnvironment.use { {~envReady.isNil}.while{0.01.wait} };
     p.makeTempoClock(2).quant_(4).fadeTime_(2);
 
     wt = Buffer.allocConsecutive(wtFiles.size, s, 8192);

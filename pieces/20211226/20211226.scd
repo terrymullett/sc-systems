@@ -5,7 +5,8 @@
     var maxVoices = 5;
     var w, b, player, playing = false;
 
-    topEnvironment.use{ { ~envReady.isNil }.while{ 0.1.wait } };
+    0.1.wait;
+    topEnvironment.use{ { ~envReady.isNil }.while{ 0.01.wait } };
 
     p.makeTempoClock(1).quant_(0);
 

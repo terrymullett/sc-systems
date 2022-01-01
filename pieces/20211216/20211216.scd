@@ -5,7 +5,8 @@
     var scale = Scale.leadingWhole, root = 3;
     var w, b, player, playing = false;
 
-    topEnvironment.use { {~envReady.isNil}.while {0.1.wait}};
+    0.1.wait;
+    topEnvironment.use { {~envReady.isNil}.while {0.01.wait}};
     p.clear;
     p.fadeTime_(2);
     ~out = { \in.ar(0!2) };
