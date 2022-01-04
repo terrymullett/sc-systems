@@ -1,7 +1,7 @@
 "../setup/Setup.scd".loadRelative;
 
 (
-var dur = [1.25, 1.1, 1, 1, 0.875, 0.75];
+var dur = [1.25, 1.125, 1, 1, 0.875, 0.75];
 var key = 3;
 var notes = [-8, 0, 2, 4, 7, 11] * key;
 var roots = Pdup(Prand([2,4], inf), Pseq([0, 4, 2, 6, 3], inf)).asStream;
