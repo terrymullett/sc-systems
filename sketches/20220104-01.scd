@@ -47,7 +47,7 @@ r{
                 \root, root,
                 \octave, 4,
                 \dur, Pseq([durs[i]], rpt),
-                \amp, Pgeom(1, 0.707, rpt) * Pwrand([0, 1], [1, 5].normalizeSum, inf),
+                \amp, Pgeom(1, 0.707, rpt) * Pwrand([0, 1], [1, 3].normalizeSum, inf),
                 \atk, 0.01 + (0.005 * i),
                 \rel, Pkey(\dur) - Pkey(\atk),
             )
