@@ -67,6 +67,8 @@ p.fadeTime_(2);
 ~a.set(\wet200, 0.07);
 )
 
+~a[300] = \filterIn -> { |in| HPF.ar(in, 50) };
+
 (
 ~a.map(\wet200, ~tri);
 ~a.map(\pos, ~sweep);
@@ -74,5 +76,5 @@ p.fadeTime_(2);
 ~a.map(\pan, ~wander);
 )
 
-ProxyMixer(p)
+ProxyMixer(p);
 
